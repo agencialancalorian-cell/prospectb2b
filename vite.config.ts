@@ -21,3 +21,15 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // ou outro plugin
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    allowedHosts: [
+      'prospectb2b.onrender.com'
+    ]
+  }
+})
